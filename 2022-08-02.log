@@ -1,0 +1,4 @@
+info	2022-08-02T08:40:10.709895100	TextOption [mainText=Will you go north?, answers=null, previewPrompt=null]
+info	2022-08-02T08:42:19.754089400	TextOption [mainText=Will you go north?, answers=null, previewPrompt=null]
+info	2022-08-02T08:44:53.294388600	TextOption [mainText=Will you go north?, answers=null, previewPrompt=null]
+info	2022-08-02T08:52:17.656233100	TextOption [mainText=You are lost in a Cave, answers=[TextOption [mainText=You are mauled by a bear, answers=null, previewPrompt=Leave the cave], TextOption [mainText=You get lost, answers=null, previewPrompt=Explore the cave]], previewPrompt=null]
