@@ -3,6 +3,8 @@ package com.revature.menu;
 import java.util.Scanner;
 
 import com.revature.model.TextOption;
+import com.revature.util.Logger;
+import com.revature.util.Logger.LogLevel;
 
 public class Menu {
 	static Scanner input;
@@ -22,15 +24,19 @@ public class Menu {
 			int num = 0;
 			try {
 				num = input.nextInt();
+				
+				Logger.log(LogLevel.info, "User selected " + num);
 			} catch(Exception e) {
-				System.out.println("Invaid input");
+				System.out.println("Invalid input");
+				Logger.log(LogLevel.warning, "User invalid input");
 				input.nextLine();
 				continue;
 			}
 			if(num > 0 && num <= range) {
 				option.CallItsMenu(num-1);
 			} else {
-				System.out.println("Invaid input");
+				System.out.println("Invalid input");
+				Logger.log(LogLevel.warning, "User invalid input");
 			}
 		}
 	}

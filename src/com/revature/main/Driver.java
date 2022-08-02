@@ -11,6 +11,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//options for the game
 		TextOption starter = new TextOption("You are lost in a Cave", null, null);
 		TextOption leave = new TextOption("You are mauled by a bear", null, "Leave the cave");
 		TextOption explore = new TextOption("You get lost", null, "Explore the cave");
@@ -29,21 +30,8 @@ public class Driver {
 		options[1] = explore;
 		starter.setAnswers(options);
 		
-		//do while or other loop
-		/*TextOption prompt = new TextOption("Will you go north?", null, null);
-		System.out.println(starter.toString());
-		Logger.log(LogLevel.info, starter.toString());
-		Scanner input = new Scanner(System.in);
 		
-		while(true) {
-			for(int i = 1; i < 4; i++) {
-				System.out.println(i + ": Your opion number " + i);
-			}
-			int num = input.nextInt();
-			if(num > 0 && num < 4) {
-				break;
-			}
-		}*/
+		Logger.log(LogLevel.info, starter.toString());
 		
 		Menu.MainMenu(starter);
 		

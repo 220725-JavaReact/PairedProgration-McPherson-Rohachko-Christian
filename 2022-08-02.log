@@ -2,3 +2,17 @@ info	2022-08-02T08:40:10.709895100	TextOption [mainText=Will you go north?, answ
 info	2022-08-02T08:42:19.754089400	TextOption [mainText=Will you go north?, answers=null, previewPrompt=null]
 info	2022-08-02T08:44:53.294388600	TextOption [mainText=Will you go north?, answers=null, previewPrompt=null]
 info	2022-08-02T08:52:17.656233100	TextOption [mainText=You are lost in a Cave, answers=[TextOption [mainText=You are mauled by a bear, answers=null, previewPrompt=Leave the cave], TextOption [mainText=You get lost, answers=null, previewPrompt=Explore the cave]], previewPrompt=null]
+info	2022-08-02T09:41:27.009467600	Created POJO: TextOption [mainText=You are lost in a Cave, answers=null, previewPrompt=null]
+info	2022-08-02T09:41:27.025482200	Created POJO: TextOption [mainText=You are mauled by a bear, answers=null, previewPrompt=Leave the cave]
+info	2022-08-02T09:41:27.025482200	Created POJO: TextOption [mainText=You get lost, answers=null, previewPrompt=Explore the cave]
+info	2022-08-02T09:41:27.026482600	Created POJO: TextOption [mainText=Hello stranger, come with me, I don't bite, answers=null, previewPrompt=You see a goblin]
+info	2022-08-02T09:41:27.026482600	Created POJO: TextOption [mainText=The Goblin helps you escapte the cave, answers=null, previewPrompt=Follow Him]
+info	2022-08-02T09:41:27.026482600	Created POJO: TextOption [mainText=The treasure is a deathtrap, answers=null, previewPrompt=You see treasure]
+info	2022-08-02T09:41:27.027484900	TextOption [mainText=You are lost in a Cave, answers=[TextOption [mainText=You are mauled by a bear, answers=null, previewPrompt=Leave the cave], TextOption [mainText=You get lost, answers=[TextOption [mainText=Hello stranger, come with me, I don't bite, answers=[TextOption [mainText=The Goblin helps you escapte the cave, answers=null, previewPrompt=Follow Him]], previewPrompt=You see a goblin], TextOption [mainText=The treasure is a deathtrap, answers=null, previewPrompt=You see treasure]], previewPrompt=Explore the cave]], previewPrompt=null]
+info	2022-08-02T09:41:37.219475500	User selected 2
+info	2022-08-02T09:41:37.220476	User called next POJO of options
+info	2022-08-02T09:41:38.682799200	User selected 1
+info	2022-08-02T09:41:38.683800400	User called next POJO of options
+info	2022-08-02T09:41:39.963548600	User selected 1
+info	2022-08-02T09:41:39.964549500	User called next POJO of options
+info	2022-08-02T09:41:39.964549500	User beat the game

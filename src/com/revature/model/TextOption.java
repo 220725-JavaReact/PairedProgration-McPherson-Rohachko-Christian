@@ -3,6 +3,8 @@ package com.revature.model;
 import java.util.Arrays;
 
 import com.revature.menu.Menu;
+import com.revature.util.Logger;
+import com.revature.util.Logger.LogLevel;
 
 public class TextOption {
 
@@ -13,12 +15,14 @@ public class TextOption {
 	public TextOption() {
 		super();
 		// TODO Auto-generated constructor stub
+		Logger.log(LogLevel.info, "Created POJO: "+ toString());
 	}
 	public TextOption(String mainText, TextOption[] answers, String previewPrompt) {
 		super();
 		this.mainText = mainText;
 		this.answers = answers;
 		this.previewPrompt = previewPrompt;
+		Logger.log(LogLevel.info, "Created POJO: "+ toString());
 	}
 	public TextOption(String mainText, TextOption[] answers, String previewPrompt, Boolean victoryState) {
 		super();
@@ -26,6 +30,7 @@ public class TextOption {
 		this.answers = answers;
 		this.previewPrompt = previewPrompt;
 		this.victoryState = victoryState;
+		Logger.log(LogLevel.info, "Created POJO: "+ toString());
 	}
 	
 	public void CallItsMenu(int i) {
@@ -33,12 +38,15 @@ public class TextOption {
 			if(victoryState) {
 				System.out.println(this.mainText);
 				System.out.println("You beat the game");
+				Logger.log(LogLevel.info, "User beat the game");
 				return;
 			} else
 				System.out.println(this.mainText);
 				System.out.println("You are dead as a doornail");
+				Logger.log(LogLevel.info, "User lost the game");
 			return;
 		}
+		Logger.log(LogLevel.info, "User called next POJO of options");
 		Menu.MainMenu(this.answers[i]);
 		
 	}
