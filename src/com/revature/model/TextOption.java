@@ -61,7 +61,9 @@ public class TextOption {
 		return answers;
 	}
 	public TextOption getSingleAnswer(int i) {
-		//error check for range.
+		if(answers != null && (i >= answers.length || i < 0)) {
+			return null;
+		}
 		return this.answers[i];
 	}
 	public void setAnswers(TextOption[] answers) {
